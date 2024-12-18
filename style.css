@@ -1,0 +1,45 @@
+/* Variables de colores */
+:root {
+    --background-color: #000; /* Fondo negro */
+    --nav-gradient-start: #ff69b4; /* Rosa */
+    --nav-gradient-end: #87cefa; /* Azul */
+    --link-color: #fff; /* Blanco */
+    --link-hover-color: #ffb6c1; /* Rosita claro */
+  }
+  
+  /* Estilos generales */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del menú de navegación */
+  nav#menu {
+    display: flex;
+    gap: 20px; /* Espaciado entre enlaces */
+    background: linear-gradient(90deg, var(--nav-gradient-start), var(--nav-gradient-end));
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos de los enlaces */
+  nav#menu a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav#menu a:hover {
+    color: var(--link-hover-color);
+  }
+  
